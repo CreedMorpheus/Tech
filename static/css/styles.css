@@ -1,0 +1,13 @@
+body {
+    background-color: aliceblue;
+    display: flex;
+}
+
+h1 {
+    color: maroon;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
