@@ -4,8 +4,8 @@ from .models import SiteContent
 # Create your views here.
 
 def home(request):
-    content = SiteContent.objects.last()
-    return render(request, 'main/home.html', {'content': content})
+    contents = SiteContent.objects.all().order_by('-id')  # newest first
+    return render(request, 'main/home.html', {'contents': contents})
 
 def trends(request):
     return render(request, 'main/trends.html')
