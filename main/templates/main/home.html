@@ -37,6 +37,28 @@
             </audio>
         </p>
     </div>
+    <div>
+        <h1>This is the content I upload from admin side.</h1>
+        <h2>{{ content.title }}</h2>
+        <p>{{ content.description }}</p>
+
+        {% if content.image %}
+            <img src="{{ content.image.url }}" width="300">
+        {% endif %}
+
+        {% if content.video %}
+            <video controls width="400">
+                <source src="{{ content.video.url }}" type="video/mp4">
+            </video>
+        {% endif %}
+
+        {% if content.audio %}
+            <audio controls>
+                <source src="{{ content.audio.url }}" type="audio/mpeg">
+            </audio>
+        {% endif %}
+
+    </div>
 </div>
 </body>
 </html>
