@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: cyan;
     display: flex;
 }
 
@@ -10,4 +10,5 @@ h1 {
 
 p {
     font-size: 1.6rem;
+    color: black;
 }
